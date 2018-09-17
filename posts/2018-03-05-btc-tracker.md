@@ -1,8 +1,12 @@
 ---
 layout: post
-title:  "Simple Bitcoin Tracker"
+type: post
+title:  Simple Bitcoin Tracker
+# All dates must be YYYY-MM-DD format!
 date:   2018-03-05 20:43:00 -0800
-categories: jekyll update
+labels:
+  - Python
+  - Bitcoin
 ---
 
 Ever feel tempted to check that Bitcoin price again? Ever wanted to automate it so you can track prices yourself, or even use it for some analysis? Here is a *very* simple way of using Python to grab the price of BTC from [blockchain.info](https://blockchain.info).
