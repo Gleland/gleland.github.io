@@ -3,7 +3,7 @@ layout: post
 type: post
 title:  Simple Bitcoin Tracker
 # All dates must be YYYY-MM-DD format!
-date:   2018-03-05 20:43:00 -0800
+date: 2018-03-05
 labels:
   - Python
   - Bitcoin
