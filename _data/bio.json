@@ -34,21 +34,10 @@
   },
   "interests": [
     {
-      "name": "Hiking",
-      "keywords": [
-        "",
-        ""
-      ]
+      "name": "Hiking"
     },
     {
-      "name": "Physics",
-      "keywords": [
-      ]
-    },
-    {
-      "name": "",
-      "keywords": [
-      ]
+      "name": "Physics"
     }
   ],
   "skills": [
@@ -63,7 +52,7 @@
     },
     {
       "name": "Toolsets/OS",
-      "level": "",
+      "level": "Familiar",
       "keywords": [
         "MacOS",
         "Ubuntu",
