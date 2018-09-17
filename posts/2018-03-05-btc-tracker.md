@@ -9,7 +9,7 @@ labels:
   - Bitcoin
 ---
 
-<img class="ui tiny left circular floated image" src="../images/bitcoin.jpg">
+<img class="ui tiny left circular floated image" src="../images/bitcoin.png">
 Ever feel tempted to check that Bitcoin price again? Ever wanted to automate it so you can track prices yourself, or even use it for some analysis? Here is a *very* simple way of using Python to grab the price of BTC from [blockchain.info](https://blockchain.info).
 
 As it turns out, there are [quite a lot](https://blockchain.info/q) of fun things that blockhain can enable you to do without much effort. For this script however, we are going to keep it simple. Say you want the most recent market price of Bitcoin. Head over to [blockchain's ticker](https://blockchain.info/api/exchange_rates_api), where you can convert the current price in BTC to ~20 different currencies. For this script, let's stick with USD.
