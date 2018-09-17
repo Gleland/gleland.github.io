@@ -9,8 +9,7 @@
     "summary": "I am a Support Engineer at Amazon, and recently graduated with my M.S in Applied Physics.",
     "location": {
       "address": "",
-      "postalCode": "",
-      "city": "Seattle",
+      "postalCode": "", "city": "Seattle",
       "countryCode": "USA",
       "region": "Washington"
     },
@@ -89,8 +88,8 @@
       "company": "Amazon",
       "position": "Support Engineer III",
       "website": "",
-      "startDate": "2017-05-09",
-      "endDate": "2018-09-21",
+      "startDate": "May 2018",
+      "endDate": "Present",
       "summary": "",
       "highlights": [
         "",
@@ -101,8 +100,8 @@
       "company": "Amazon",
       "position": "Support Engineer II",
       "website": "",
-      "startDate": "2017-11-27",
-      "endDate": "2018-05-09",
+      "startDate": "Nov 2017",
+      "endDate": "May 2018",
       "summary": "",
       "highlights": [
         "",

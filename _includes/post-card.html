@@ -1,6 +1,6 @@
 <!-- Used by theme-posts-builtin-1 -->
 
-<div class="card">
+<a class="card" href="{{ site.baseurl}}{{ include.page.url }}">
   <div class="content">
     <span class="header">{{ include.page.title }}</span>
     <div class="meta">
@@ -18,5 +18,6 @@
       {% endfor %}
     </div>
   </div>
-  <a class="ui bottom attached button" href="{{ site.baseurl}}{{ include.page.url }}">Read More</a>
-</div>
+  <!--<a class="ui bottom attached button" href="{{ site.baseurl}}{{ include.page.url }}">Read More
+</div>-->
+      </a>
