@@ -9,6 +9,7 @@ date: 2018-03-05
 labels:
   - Python
   - Bitcoin
+summary: Simple Python script to query Bitcoin prices
 ---
 
 <img class="ui tiny left circular floated image" src="../images/bitcoin.png">

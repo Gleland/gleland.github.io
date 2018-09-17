@@ -34,14 +34,14 @@
   },
   "interests": [
     {
-      "name": "",
+      "name": "Hiking",
       "keywords": [
         "",
         ""
       ]
     },
     {
-      "name": "",
+      "name": "Physics",
       "keywords": [
       ]
     },
@@ -56,12 +56,9 @@
       "name": "Languages and Frameworks",
       "level": "",
       "keywords": [
-        "C",
-        "C++",
-        "Java",
-        "Javascript",
-        "Assembly",
-        "Common Lisp"
+        "Python",
+        "Mathematica",
+        "LabVIEW"
       ]
     },
     {
@@ -71,8 +68,8 @@
         "MacOS",
         "Ubuntu",
         "Git/GitHub",
-        "g++",
-        "TI LaunchPad"
+        "Vim",
+        "Emacs"
       ]
     }
   ],
@@ -101,10 +98,22 @@
   "work": [
     {
       "company": "Amazon",
-      "position": "Support Engineer",
+      "position": "Support Engineer III",
+      "website": "",
+      "startDate": "2017-05-09",
+      "endDate": "2018-09-21",
+      "summary": "",
+      "highlights": [
+        "",
+        ""
+      ]
+    },
+    {
+      "company": "Amazon",
+      "position": "Support Engineer II",
       "website": "",
       "startDate": "2017-11-27",
-      "endDate": "Present",
+      "endDate": "2018-05-09",
       "summary": "",
       "highlights": [
         "",
