@@ -2,6 +2,7 @@
 layout: post
 type: post
 title:  Simple Bitcoin Tracker
+permalink: posts/simple-bitcoin-tracker
 # All dates must be YYYY-MM-DD format!
 date: 2018-03-05
 labels:
