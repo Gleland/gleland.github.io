@@ -9,6 +9,7 @@ date: 2018-03-11
 labels:
   - Python
   - Statistical Analysis
+summary: Python script to help retain signficant figures during calculations
 ---
 
 This inspiration came from when I was in grad school, trying to finish my error analysis assignments. Basically, how can you trust the computer (or programming language) to conserve whatver significant figure you have during a calculation?
@@ -34,7 +35,7 @@ Here are the rules regarding sig figs, which can be found at [Wikipedia](https:/
  Running `test.py` should yield these results:
  
 |Input| Sig Figs|Input |Sig Figs|
-|---|---|---|---|
+|:---:|:---:|:---:|:---:|
 |100.0  | 4| 0.00203  | 3|
 |-100.0 | 4| 1203450  | 6|
 |1000   | 1| 5420     | 3|
