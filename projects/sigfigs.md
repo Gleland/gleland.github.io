@@ -3,6 +3,7 @@ layout: project
 type: project
 title:  Significant Figures Calculator
 permalink: posts/significant-figures-calculator
+image: images/ruler.jpg
 # All dates must be YYYY-MM-DD format!
 date: 2018-03-11
 labels:
