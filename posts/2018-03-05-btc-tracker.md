@@ -1,6 +1,6 @@
 ---
-layout: project
-type: project
+layout: post
+type: post
 image: images/bitcoin.png
 title:  Simple Bitcoin Tracker
 permalink: posts/simple-bitcoin-tracker
