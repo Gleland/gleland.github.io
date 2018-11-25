@@ -45,18 +45,19 @@
       "level": "",
       "keywords": [
         "Python",
+        "Ruby",
         "Mathematica",
-        "LabVIEW"
+        "LabVIEW",
       ]
     },
     {
-      "name": "Toolsets/OS",
+      "name": "Tools and Systems",
       "level": "Familiar",
       "keywords": [
-        "MacOS",
-        "Ubuntu",
+        "macOS",
+        "Linux",
         "Git/GitHub",
-        "Vim",
+        "Vim/Neovim",
         "Emacs"
       ]
     }
@@ -87,26 +88,23 @@
     {
       "company": "Amazon",
       "position": "Support Engineer III",
-      "website": "amazon.com",
+      "website": "https://www.amazon.com",
       "startDate": "May 2018",
       "endDate": "Present",
-      "summary": "",
+      "summary": "Helped organize and coordinate the Alexa Communications org with operational excellence efforts.",
       "highlights": [
-        "",
-        ""
+        "Lead the org in Gameday simulations in preparation for large events like Christmas and Prime Day.",
+        "Apply troubleshooting/debugging to root cause customer tickets.",
+        "Drive operational excellence intitiatives across the Alexa Communications organization",
+        "Drive projects and build internal tools to automate and reduce repetitive tasks",
       ]
     },
     {
       "company": "Amazon",
       "position": "Support Engineer II",
-      "website": "amazon.com",
+      "website": "https://www.amazon.com",
       "startDate": "Nov 2017",
       "endDate": "May 2018",
-      "summary": "",
-      "highlights": [
-        "",
-        ""
-      ]
     }
   ],
   "volunteer": [
@@ -122,32 +120,19 @@
         ""
       ]
     },
-    {
-      "organization": "",
-      "website": "",
-      "position": "Professional organization involvement",
-      "startDate": "",
-      "endDate": "",
-      "summary": "",
-      "highlights": [
-        "Chair, ACM Manoa, 2016-Present",
-        "Member, IEEE Student Branch, 2014-Present",
-        "Webmaster/IT Officer, IEEE Student Branch, UH Manoa, 2012-2013"
-      ]
-    }
   ],
   "awards": [
     {
-      "title": "B+ Scholarship",
-      "date": "2013-Present",
-      "awarder": "State of Hawaii",
-      "summary": "Scholarships awarded to incoming freshmen and continuing students who complete a rigorous high school curriculum with a minimum overall GPA of 3.0 at a Hawai'i public school."
+      "title": "",
+      "date": "",
+      "awarder": "",
+      "summary": ""
     },
     {
-      "title": "First place",
-      "date": "2015",
-      "awarder": "University of Hawaii Micromouse Competition",
-      "summary": "My team won first place in 2015.  See my portfolio site for more details."
+      "title": "",
+      "date": "",
+      "awarder": "",
+      "summary": ""
     }
   ],
   "references": [

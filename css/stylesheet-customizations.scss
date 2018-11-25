@@ -9,7 +9,7 @@
 body {
   //background: linear-gradient(to bottom right, lightskyblue, whitesmoke);
   //https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#Color_keywords
-  background: linear-gradient(to right, lightskyblue, whitesmoke);
+  background: linear-gradient(to right, silver, gainsboro);
   //background: linear-gradient(to right, mediumblue, blueviolet);
 }
 
@@ -17,11 +17,12 @@ body {
 .ui.menu {
   //background: cornflowerblue;
   //background: linear-gradient(to right, lightskyblue, whitesmoke);
-  background: linear-gradient(to right, lightskyblue, blueviolet);
+  background: gainsboro;
 }
 
 // Customize the home page icon colors
 .icon-color {
   //color: darken(lightsteelblue, 20%);
-  color: darken(blueviolet, 20%);
+  color: darken(blue, 5%);
 }
+

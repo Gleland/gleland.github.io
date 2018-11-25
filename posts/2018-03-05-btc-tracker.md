@@ -28,7 +28,7 @@ Awesome! But now we want to convert it to a JSON structure ([JavaScript Object N
 
 {% highlight python %}
 json_data = json.load(raw_data)
-price = str(json_data["USD"]["last"])
+price = json_data["USD"]["last"]
 print("$"+str(price))
 {% endhighlight %}
 
