@@ -9,9 +9,10 @@
     "summary": "Support Engineer at Amazon, M.S. and B.S. in Physics",
     "location": {
       "address": "",
-      "postalCode": "", "city": "Seattle",
-      "countryCode": "USA",
-      "region": "Washington"
+      "postalCode": "", 
+      "city": "Seattle",
+      "region": "Washington",
+      "countryCode": "USA"
     },
     "profiles": [
       {
