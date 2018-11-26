@@ -9,7 +9,7 @@
 body {
   //background: linear-gradient(to bottom right, lightskyblue, whitesmoke);
   //https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#Color_keywords
-  background: linear-gradient(to right, silver, gainsboro);
+  background-color: #666666;
   //background: linear-gradient(to right, mediumblue, blueviolet);
 }
 
@@ -17,12 +17,51 @@ body {
 .ui.menu {
   //background: cornflowerblue;
   //background: linear-gradient(to right, lightskyblue, whitesmoke);
-  background: gainsboro;
+  //background: #f5f5f5;
+  background: #a6a480;
 }
 
-// Customize the home page icon colors
+// Customize the home page icon colors (like twitter, github, etc)
 .icon-color {
   //color: darken(lightsteelblue, 20%);
-  color: darken(blue, 5%);
+  color: #17170e;
 }
 
+.ui.card {
+  background: #a6a480 !important;
+  }
+
+.ui.cards > .card {
+  background: #bcbcbd !important;
+  box-shadow: 0 1px 0px 7px #D4D4D5,0 0 0 1px #D4D4D5;
+}
+
+//.ui.card, .ui.cards > .card {
+//background: #bcbcbd !important;
+//  box-shadow: 0 1px 0px 7px #D4D4D5,0 0 0 1px #D4D4D5;
+//}
+
+.ui.basic.button, .ui.basic.buttons {
+  background: #bcbcbd !important;
+}
+
+// Make text smaller, remove spacing between list items when printing.
+//@media print {
+//
+//  p, a, li {
+//    font-size: 12px;
+//  }
+//
+//  h1, h2.ui.header, h3.ui.header {
+//    font-size: 14px;
+//  }
+//
+//  a {
+//    color: #96bf48;
+//  }
+//
+//  ul li {
+//    padding: 0px;
+//    margin: 0px;
+//  }
+//}
