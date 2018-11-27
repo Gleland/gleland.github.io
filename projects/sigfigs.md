@@ -25,8 +25,8 @@ Here are the rules regarding sig figs, which can be found at [Wikipedia](https:/
 
  - All non-zero digits are significant (843 has 3 sig figs)
  - Zeroes that are in between two non-zero digits are significant (404 and 808 both have 3 sig figs)
- - Leading zeroes are not significant (0.001 has 1 sig fig.)
- - Trailing zeroes are not significant *unless* a decimal is in front of them (1200 has 2 sig figs, 2.00 has 3, 100 has 1, and 100. has 3).
+ - Leading zeroes are not significant (0.001 has 1 sig fig).
+ - Trailing zeroes are not significant *unless* a decimal is present (1200 has 2 sig figs, 2.00 has 3, 100 has 1, and 100. has 3).
  
  
  
