@@ -46,6 +46,9 @@ body {
   background: #bcbcbd !important;
 }
 
+.ui.fluid.centered.small.circular.image {
+      box-shadow: 0 0 0 5px #D4D4D5;
+  }
 // Make text smaller, remove spacing between list items when printing.
 //@media print {
 //
