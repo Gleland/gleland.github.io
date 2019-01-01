@@ -63,11 +63,11 @@
   <p><img src="/images/bitcoin.png" alt="/images/bitcoin.png" title="/images/bitcoin.png" /></p>
 
 <p>Ever feel tempted to check that Bitcoin price again? Ever wanted to automate it so you can track prices yourself, or even use it for some analysis?
-Here is a very simple way of using Python to grab the price of BTC from <a href="https://blockchain.info" title="blockchain.info" target="_blank">blockchain.info</a>.</p>
+Here is a very simple way of using Python to grab the price of BTC from <a href="https://blockchain.info" title="blockchain.info">blockchain.info</a>.</p>
 
-<p>As it turns out, there are <a href="https://blockchain.info/q" title="quite a lot" target="_blank">quite a lot</a> of fun things that blockhain can enable you to do without much effort.
+<p>As it turns out, there are <a href="https://blockchain.info/q" title="quite a lot">quite a lot</a> of fun things that blockhain can enable you to do without much effort.
 For this script however, we are going to keep it simple. Say you want the most recent market price of Bitcoin.
- Head over to <a href="https://blockchain.info/api/exchange_rates_api" title="blockchain's ticker" target="_blank">blockchain's ticker</a>, where you can convert the current price in BTC to ~20 different currencies. For this script, let's stick with USD.</p>
+ Head over to <a href="https://blockchain.info/api/exchange_rates_api" title="blockchain's ticker">blockchain's ticker</a>, where you can convert the current price in BTC to ~20 different currencies. For this script, let's stick with USD.</p>
 
 <p>The first thing we want to do is call the URL with python. Let's do that now:</p>
 
@@ -75,13 +75,13 @@ For this script however, we are going to keep it simple. Say you want the most r
 link <span style="color:#666">=</span> <span style="color:#4070a0">&#34;https://blockchain.info/ticker&#34;</span>
 raw_data <span style="color:#666">=</span> urlopen(link)</code></pre></div>
 
-<p>Awesome! But now we want to convert it to a JSON structure (<a href="https://en.wikipedia.org/wiki/JSON" title="JavaScript Object Notation" target="_blank">JavaScript Object Notation</a>) for easier handling. And while we are at it, let's filter the USD parameter.</p>
+<p>Awesome! But now we want to convert it to a JSON structure (<a href="https://en.wikipedia.org/wiki/JSON" title="JavaScript Object Notation">JavaScript Object Notation</a>) for easier handling. And while we are at it, let's filter the USD parameter.</p>
 
 <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">json_data <span style="color:#666">=</span> json<span style="color:#666">.</span>load(raw_data)
 price <span style="color:#666">=</span> json_data[<span style="color:#4070a0">&#34;USD&#34;</span>][<span style="color:#4070a0">&#34;last&#34;</span>]
 <span style="color:#007020;font-weight:bold">print</span>(<span style="color:#4070a0">&#34;$&#34;</span><span style="color:#666">+</span><span style="color:#007020">str</span>(price))</code></pre></div>
 
-<p>This last block of code will convert the data from <a href="https://blockchain.info/api/exchange_rates_api" title="blockchain's ticker" target="_blank">blockchain's ticker</a>, and convert the most recent price to USD.</p>
+<p>This last block of code will convert the data from <a href="https://blockchain.info/api/exchange_rates_api" title="blockchain's ticker">blockchain's ticker</a>, and convert the most recent price to USD.</p>
 
 <p>And that's it! You've now taken your first step toward tracking bitcoin prices.</p>
 
