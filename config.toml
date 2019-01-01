@@ -1,4 +1,4 @@
-baseURL = "https://gleland.org"
+baseURL = "https://gleland.github.io"
 languageCode = "en-us"
 title = "Garrett Leland"
 #theme="hyde"
