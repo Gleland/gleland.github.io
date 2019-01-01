@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Garrett Leland</title>
+    <link>https://gleland.github.io/</link>
+    <description>Recent content on Garrett Leland</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 11 Mar 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://gleland.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Significant Figures Calculator</title>
+      <link>https://gleland.github.io/posts/sigfigs/</link>
+      <pubDate>Sun, 11 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://gleland.github.io/posts/sigfigs/</guid>
+      <description>This inspiration came from when I was in grad school, trying to finish my error analysis assignments. Basically, how can you trust the computer (or programming language) to conserve whatver significant figure you have during a calculation?
+Included in this repository are sigfigs.py, which has the code to count the number of significant figures in a number, and test.py, which will allow the user to run a test to confirm whether the code works in its method.</description>
+    </item>
+    
+    <item>
+      <title>Simple Bitcoin Tracker</title>
+      <link>https://gleland.github.io/posts/simple-bitcoin-tracker/</link>
+      <pubDate>Mon, 05 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://gleland.github.io/posts/simple-bitcoin-tracker/</guid>
+      <description>Ever feel tempted to check that Bitcoin price again? Ever wanted to automate it so you can track prices yourself, or even use it for some analysis? Here is a very simple way of using Python to grab the price of BTC from blockchain.info.
+As it turns out, there are quite a lot of fun things that blockhain can enable you to do without much effort. For this script however, we are going to keep it simple.</description>
+    </item>
+    
+    <item>
+      <title>An Alternative to the Standard Homework Model</title>
+      <link>https://gleland.github.io/posts/bachelors/</link>
+      <pubDate>Wed, 25 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://gleland.github.io/posts/bachelors/</guid>
+      <description>From Fall 2010 through Spring 2015 I attended California State Univeristy while I earned my B.S. in physics. Along the way I earned two certificates: Scientific Computation and Simulation, and Scientific Instrumentation Development by taking various courses in electronics and programming. I also earned a minor in mathematics by taking extra electives.
+My senior project entailed the construction of a website to challenge the standard homework model in the college classroom.</description>
+    </item>
+    
+    <item>
+      <title>Exploring the Methane-Ethane Eutectic System</title>
+      <link>https://gleland.github.io/posts/masters/</link>
+      <pubDate>Wed, 25 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://gleland.github.io/posts/masters/</guid>
+      <description>From Fall 2015 through Spring 2017 I attended Northern Arizona Univeristy while I pursed my Master&#39;s degree. There I took a variety of courses and did research focusing on the lakes of Titan. I investigated different hydrocarbons known to exist in the lakes found on Titan, and performed experiments to see how they would interact with one another. Here is the abstract of my thesis:
+  Understanding how hydrocarbons interact with one another is critical to understanding past, present, and future climates on icy bodies in the outer Solar System.</description>
+    </item>
+    
+  </channel>
+</rss>
