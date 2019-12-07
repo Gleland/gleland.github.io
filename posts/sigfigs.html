@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="data:image/png;base64,">
+    <link type="text/css" rel="stylesheet" href="https://gleland.github.io/css/main.css">
+
+    <h1>Significant Figures Calculator</h1>
+    <time datetime=2018-03-11T00:00:00Z class="post-date">Sun, Mar 11, 2018</time>
+    <figure><img src="/images/ruler.jpg" width="300px"/> </figure>
+
+
+    <article>
+        <p>This inspiration came from when I was in grad school, trying to finish my error analysis assignments. Basically, how can you trust the computer (or programming language) to conserve whatver significant figure you have during a calculation?</p>
+
+        <p>Included in this repository are <strong>sigfigs.py</strong>, which has the code to count the number of significant figures in a number, and <strong>test.py</strong>, which will allow the user to run a test to confirm whether the code works in its method.</p>
+
+        <p><em>NOTE</em> : When using this code, the number of interest must be entered as string:
+        <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">sfCount(<span style="color:#4070a0">&#39;0.0670&#39;</span>)</code></pre></div></p>
+
+        <p>and not a float:
+        <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">sfCount(<span style="color:#40a070">0.670</span>)</code></pre></div></p>
+
+        <p>Otherwise python will strip the traling zero and result in an incorrect answer. Any thoughts or suggestion on how to avoid this please reach out, I would very much welcome any feedback!</p>
+
+        <h2 id="rules-for-determining-significant-figures">Rules for Determining Significant Figures</h2>
+
+        <p>Here are the rules regarding sig figs, which can be found at 
+        <a href="https://en.wikipedia.org/wiki/Significant_figures" title="Wikipedia">Wikipedia</a> with more detail, but any Google search will yield the same results.</p>
+
+        <ul>
+        <li>All non-zero digits are significant (843 has 3 sig figs)</li>
+        <li>Zeroes that are in between two non-zero digits are significant (404 and 808 both have 3 sig figs)</li>
+        <li>Leading zeroes are not significant (0.001 has 1 sig fig).</li>
+        <li>Trailing zeroes are not significant <strong>unless</strong> a decimal is present (1200 has 2 sig figs, 2.00 has 3, 100 has 1, and 100. has 3).</li>
+        </ul>
+
+        <h2 id="test-script">Test script</h2>
+
+        <p>Running <strong>test.py</strong> should yield these results:</p>
+
+        <table>
+        <tbody>
+        <tr>
+        <td>Input</td>
+        <td>Sig Figs</td>
+        <td>Input</td>
+        <td>Sig Figs</td>
+        </tr>
+
+        <tr>
+        <td>100.0</td>
+        <td>4</td>
+        <td>0.00203</td>
+        <td>3</td>
+        </tr>
+
+        <tr>
+        <td>-100.0</td>
+        <td>4</td>
+        <td>1203450</td>
+        <td>6</td>
+        </tr>
+
+        <tr>
+        <td>1000</td>
+        <td>1</td>
+        <td>5420</td>
+        <td>3</td>
+        </tr>
+
+        <tr>
+        <td>01000.</td>
+        <td>4</td>
+        <td>-0.006700</td>
+        <td>4</td>
+        </tr>
+
+        <tr>
+        <td>01000.0</td>
+        <td>5</td>
+        <td>0.06540</td>
+        <td>4</td>
+        </tr>
+
+        <tr>
+        <td>0.002</td>
+        <td>1</td>
+        <td>009009.</td>
+        <td>4</td>
+        </tr>
+
+        <tr>
+        <td>0.0020</td>
+        <td>2</td>
+        <td>90090.</td>
+        <td>5</td>
+        </tr>
+        </tbody>
+        </table>
+
+        <h2 id="using-the-code">Using the code</h2>
+        <p>Include this in your code to use <strong>sigfigs.py</strong>. Make sure the file is in the same directory as your code.</p>
+        <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#007020;font-weight:bold">import</span> <span style="color:#0e84b5;font-weight:bold">sigfigs</span> <span style="color:#007020;font-weight:bold">as</span> <span style="color:#0e84b5;font-weight:bold">sf</span></code></pre></div>
+        <p>To use the code and count sig figs, just use ```sf.sfCount('0.670')``` or whatever number desired. Make sure to enclose the number in quotes, or the result may be incorrect.</p>
+        <p>Additionally, this code can be used to perform operations and adhere to the rules of preserving sigfigs. After importing the file into your code just add ```sf.sfMult()``` for multiplying, ```sf.sfDiv()``` for dividing, ```sf.sfAdd()``` for adding, and ```sf.sfSub()``` for dividing.</p>
+        <p>To count sig figs, use ```sf.sfCount()```, or to round sig figs, use ```sf.sfRound()```.</p>
+        <p>Source: <a href="https://github.com/Gleland/SigFigs" title="Gleland/SigFigs">Gleland/SigFigs</a></p>
+    </article>
+</html>
