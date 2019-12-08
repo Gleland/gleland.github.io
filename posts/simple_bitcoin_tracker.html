@@ -16,14 +16,12 @@ Here is a very simple way of using Python to grab the price of BTC from <a href=
 For this script however, we are going to keep it simple. Say you want the most recent market price of Bitcoin.
  Head over to <a href="https://blockchain.info/api/exchange_rates_api" title="blockchain's ticker">blockchain's ticker</a>, where you can convert the current price in BTC to ~20 different currencies. For this script, let's stick with USD.</p>
         <p>The first thing we want to do is call the URL with python. Let's do that now:</p>
-        <div class="codeblock">
-            <code>
+        <code class="codeblock">
                 from urllib.request import urlopen
                 link ="https://blockchain.info/ticker"
                 raw_data = urlopen(link)
-            </code>
-        </div>
-            <p>Awesome! But now we want to convert it to a JSON structure (<a href="https://en.wikipedia.org/wiki/JSON" title="JavaScript Object Notation">JavaScript Object Notation</a>) for easier handling. And while we are at it, let's filter the USD parameter.</p>
+        </code>
+        <p>Awesome! But now we want to convert it to a JSON structure (<a href="https://en.wikipedia.org/wiki/JSON" title="JavaScript Object Notation">JavaScript Object Notation</a>) for easier handling. And while we are at it, let's filter the USD parameter.</p>
         <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">json_data <span style="color:#666">=</span> json<span style="color:#666">.</span>load(raw_data)
 price <span style="color:#666">=</span> json_data[<span style="color:#4070a0">&#34;USD&#34;</span>][<span style="color:#4070a0">&#34;last&#34;</span>]
 <span style="color:#007020;font-weight:bold">print</span>(<span style="color:#4070a0">&#34;$&#34;</span><span style="color:#666">+</span><span style="color:#007020">str</span>(price))</code></pre></div>
