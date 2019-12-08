@@ -13,6 +13,12 @@ h1,h2,h3 {
     }
 }
 
-.codeblock {
+.highlight {
     background-color:#f0f0f0;
+}
+pre {
+    background-color:#f0f0f0;
+    -moz-tab-size:4;
+    -o-tab-size:4;
+    tab-size:4;
 }
