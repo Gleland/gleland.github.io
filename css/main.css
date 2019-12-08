@@ -17,5 +17,8 @@ pre, code {
     white-space: pre-line;
 }
 
+.code code {
+    background-color: #f0f0f0;
+}
 
 
