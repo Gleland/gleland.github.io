@@ -12,3 +12,7 @@ h1,h2,h3 {
         max-width:none
     }
 }
+
+#codeblock {
+    background-color:#f0f0f0;
+}
