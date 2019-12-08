@@ -13,9 +13,12 @@ h1,h2,h3 {
     }
 }
 
+pre {
+    background-color: #f0f0f0;
+}
+
 pre, code {
     white-space: pre-line;
-    background-color: #f0f0f0;
 }
 
 .footer {
