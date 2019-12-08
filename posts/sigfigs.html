@@ -2,6 +2,7 @@
 <html lang="en">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="icon" type="image/png" href="data:image/png;base64,">
     <link type="text/css" rel="stylesheet" href="https://gleland.github.io/css/main.css">
 
@@ -16,7 +17,7 @@
         <p>Included in this repository are <strong>sigfigs.py</strong>, which has the code to count the number of significant figures in a number, and <strong>test.py</strong>, which will allow the user to run a test to confirm whether the code works in its method.</p>
 
         <p><em>NOTE</em> : When using this code, the number of interest must be entered as string:
-        <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">sfCount(<span style="color:#4070a0">&#39;0.0670&#39;</span>)</code></pre></div></p>
+        <pre><code class="language-python" data-lang="python">sfCount("0.0670")</code></pre>
 
         <p>and not a float:
         <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">sfCount(<span style="color:#40a070">0.670</span>)</code></pre></div></p>
@@ -39,64 +40,58 @@
 
         <p>Running <strong>test.py</strong> should yield these results:</p>
 
-        <table>
-        <tbody>
-        <tr>
-        <td>Input</td>
-        <td>Sig Figs</td>
-        <td>Input</td>
-        <td>Sig Figs</td>
-        </tr>
+        <table class="table">
+            <tbody>
+                <tr>
+                    <td>Input</td>
+                    <td>Sig Figs</td>
+                    <td>Input</td>
+                    <td>Sig Figs</td>
+                </tr>
+                <tr>
+                    <td>100.0</td>
+                    <td>4</td>
+                    <td>0.00203</td>
+                    <td>3</td>
+                </tr>
 
-        <tr>
-        <td>100.0</td>
-        <td>4</td>
-        <td>0.00203</td>
-        <td>3</td>
-        </tr>
-
-        <tr>
-        <td>-100.0</td>
-        <td>4</td>
-        <td>1203450</td>
-        <td>6</td>
-        </tr>
-
-        <tr>
-        <td>1000</td>
-        <td>1</td>
-        <td>5420</td>
-        <td>3</td>
-        </tr>
-
-        <tr>
-        <td>01000.</td>
-        <td>4</td>
-        <td>-0.006700</td>
-        <td>4</td>
-        </tr>
-
-        <tr>
-        <td>01000.0</td>
-        <td>5</td>
-        <td>0.06540</td>
-        <td>4</td>
-        </tr>
-
-        <tr>
-        <td>0.002</td>
-        <td>1</td>
-        <td>009009.</td>
-        <td>4</td>
-        </tr>
-
-        <tr>
-        <td>0.0020</td>
-        <td>2</td>
-        <td>90090.</td>
-        <td>5</td>
-        </tr>
-        </tbody>
+                <tr>
+                    <td>-100.0</td>
+                    <td>4</td>
+                    <td>1203450</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>1000</td>
+                    <td>1</td>
+                    <td>5420</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>01000.</td>
+                    <td>4</td>
+                    <td>-0.006700</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>01000.0</td>
+                    <td>5</td>
+                    <td>0.06540</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>0.002</td>
+                    <td>1</td>
+                    <td>009009.</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>0.0020</td>
+                    <td>2</td>
+                    <td>90090.</td>
+                    <td>5</td>
+                </tr>
+            </tbody>
         </table>
 
         <h2 id="using-the-code">Using the code</h2>
