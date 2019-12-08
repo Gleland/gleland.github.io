@@ -2,6 +2,7 @@
 <html lang="en">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="icon" type="image/png" href="data:image/png;base64,">
     <link type="text/css" rel="stylesheet" href="https://gleland.github.io/css/main.css">
     <title>Simple Bitcoin Tracker &middot; Garrett Leland</title>
@@ -18,17 +19,17 @@ For this script however, we are going to keep it simple. Say you want the most r
         <p>The first thing we want to do is call the URL with python. Let's do that now:</p>
             <pre>
                 <code class="language-python" data-lang="python">
-                from urllib.request import urlopen
-                link ="https://blockchain.info/ticker"
-                raw_data = urlopen(link)
+                    from urllib.request import urlopen
+                    link = "https://blockchain.info/ticker"
+                    raw_data = urlopen(link)
                 </code>
             </pre>
         <p>Awesome! But now we want to convert it to a JSON structure (<a href="https://en.wikipedia.org/wiki/JSON" title="JavaScript Object Notation">JavaScript Object Notation</a>) for easier handling. And while we are at it, let's filter the USD parameter.</p>
             <pre>
                 <code class="language-python" data-lang="python">
-                json_data = json.load(raw_data)
-                price = json_data["USD"]["last"]
-                print(f"${price}")
+                    json_data = json.load(raw_data)
+                    price = json_data["USD"]["last"]
+                    print(f"${price}")
                 </code>
             </pre>
         <p>This last block of code will convert the data from <a href="https://blockchain.info/api/exchange_rates_api" title="blockchain's ticker">blockchain's ticker</a>, and convert the most recent price to USD.</p>

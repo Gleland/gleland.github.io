@@ -16,11 +16,11 @@
 
         <p>Included in this repository are <strong>sigfigs.py</strong>, which has the code to count the number of significant figures in a number, and <strong>test.py</strong>, which will allow the user to run a test to confirm whether the code works in its method.</p>
 
-        <p><em>NOTE</em> : When using this code, the number of interest must be entered as string:
+        <p><em>Note:</em> when using this code, the number of interest must be entered as string:
         <pre><code class="language-python" data-lang="python">sfCount("0.0670")</code></pre>
 
         <p>and not a float:
-        <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">sfCount(<span style="color:#40a070">0.670</span>)</code></pre></div></p>
+        <pre><code class="language-python" data-lang="python">sfCount("0.670")</code></pre>
 
         <p>Otherwise python will strip the traling zero and result in an incorrect answer. Any thoughts or suggestion on how to avoid this please reach out, I would very much welcome any feedback!</p>
 
@@ -96,7 +96,11 @@
 
         <h2 id="using-the-code">Using the code</h2>
         <p>Include this in your code to use <strong>sigfigs.py</strong>. Make sure the file is in the same directory as your code.</p>
-        <div class="highlight"><pre style="background-color:#f0f0f0;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#007020;font-weight:bold">import</span> <span style="color:#0e84b5;font-weight:bold">sigfigs</span> <span style="color:#007020;font-weight:bold">as</span> <span style="color:#0e84b5;font-weight:bold">sf</span></code></pre></div>
+        <pre>
+            <code class="language-python" data-lang="python">
+                import sigfigs as sf
+            </code>
+        </pre>
             <p>To use the code and count sig figs, just use <code>sf.sfCount('0.670')</code> or whatever number desired. Make sure to enclose the number in quotes, or the result may be incorrect.</p>
             <p>Additionally, this code can be used to perform operations and adhere to the rules of preserving sigfigs. After importing the file into your code just add <code>sf.sfMult()</code> for multiplying, <code>sf.sfDiv()</code> for dividing, <code>sf.sfAdd()</code> for adding, and <code>sf.sfSub()</code> for dividing.</p>
             <p>To count sig figs, use <code>sf.sfCount()</code> or to round sig figs, use <code>sf.sfRound()</code><p>
