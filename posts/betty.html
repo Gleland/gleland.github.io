@@ -1,18 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="icon" type="image/png" href="data:image/png;base64,">
-    <link type="text/css" rel="stylesheet" href="https://gleland.github.io/css/main.css">
+<html>
+	<head>
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+		<script> 
+			$(function(){
+			  $("#header").load("header.html"); 
+			  $("#footer").load("footer.html"); 
+			});
+		</script> 
     <link type="text/css" rel="stylesheet" href="https://gleland.github.io/css/betty.css">
-    <title>For Betty</title>
+	</head>
+	<body>
+		<div id="header"></div>
+		<!--Remaining section-->
 
-    </head>
-    <body>
         <h1>For Betty</h1>
         <time datetime=2019-11-15T00:00:00Z class="post-date">Fri, Nov 15, 2019</time>
-        <p><a href="https://kathrynneugent.com/2019/11/16/the-amazing-betty-kitty"/>Kathryn's Tribute.</a></p>
+        <p><a href="https://kathrynneugent.com/2019/11/16/the-amazing-betty-kitty">Kathryn's Tribute.</a></p>
         <div class="slideshow-container">
             <div class="mySlides">
               <div class="numbertext">1 / 8</div>
@@ -99,5 +103,5 @@
               dots[slideIndex-1].className += " active";
             }
         </script>
-    </body>
+	</body>
 </html>
