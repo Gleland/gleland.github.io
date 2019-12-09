@@ -1,44 +1,38 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
-		<script> 
-			$(function(){
-			  $("#header").load("header.html"); 
-			  $("#footer").load("footer.html"); 
-			});
-		</script> 
-	</head>
-	<body>
-		<div id="header"></div>
-		<!--Remaining section-->
-		<h1>Simple Bitcoin Tracker</h1>
-		<time datetime=2018-03-05T00:00:00Z class="post-date">Mon, Mar 5, 2018</time>
-		<article>
-			<p><img src="/images/bitcoin.png" alt="/images/bitcoin.png" title="/images/bitcoin.png" /></p>
-			<p>Ever feel tempted to check that Bitcoin price again? Ever wanted to automate it so you can track prices yourself, or even use it for some analysis?
-	Here is a very simple way of using Python to grab the price of BTC from <a href="https://blockchain.info" title="blockchain.info">blockchain.info</a>.</p>
-			<p>As it turns out, there are <a href="https://blockchain.info/q" title="quite a lot">quite a lot</a> of fun things that blockhain can enable you to do without much effort.
-	For this script however, we are going to keep it simple. Say you want the most recent market price of Bitcoin.
-	 Head over to <a href="https://blockchain.info/api/exchange_rates_api" title="blockchain's ticker">blockchain's ticker</a>, where you can convert the current price in BTC to ~20 different currencies. For this script, let's stick with USD.</p>
-			<p>The first thing we want to do is call the URL with python. Let's do that now:</p>
-				<pre>
-					<code class="language-python" data-lang="python">
-						from urllib.request import urlopen
-						link = "https://blockchain.info/ticker"
-						raw_data = urlopen(link)
-					</code>
-				</pre>
-			<p>Awesome! But now we want to convert it to a JSON structure (<a href="https://en.wikipedia.org/wiki/JSON" title="JavaScript Object Notation">JavaScript Object Notation</a>) for easier handling. And while we are at it, let's filter the USD parameter.</p>
-				<pre>
-					<code class="language-python" data-lang="python">
-						json_data = json.load(raw_data)
-						price = json_data["USD"]["last"]
-						print(f"${price}")
-					</code>
-				</pre>
-			<p>This last block of code will convert the data from <a href="https://blockchain.info/api/exchange_rates_api" title="blockchain's ticker">blockchain's ticker</a>, and convert the most recent price to USD.</p>
-			<p>And that's it! You've now taken your first step toward tracking bitcoin prices.</p>
-		</article>
-	</body>
+<html lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="data:image/png;base64,">
+    <link type="text/css" rel="stylesheet" href="https://gleland.github.io/css/main.css">
+    <title>Simple Bitcoin Tracker &middot; Garrett Leland</title>
+
+    <h1>Simple Bitcoin Tracker</h1>
+    <time datetime=2018-03-05T00:00:00Z class="post-date">Mon, Mar 5, 2018</time>
+    <article>
+        <p><img src="/images/bitcoin.png" alt="/images/bitcoin.png" title="/images/bitcoin.png" /></p>
+        <p>Ever feel tempted to check that Bitcoin price again? Ever wanted to automate it so you can track prices yourself, or even use it for some analysis?
+Here is a very simple way of using Python to grab the price of BTC from <a href="https://blockchain.info" title="blockchain.info">blockchain.info</a>.</p>
+        <p>As it turns out, there are <a href="https://blockchain.info/q" title="quite a lot">quite a lot</a> of fun things that blockhain can enable you to do without much effort.
+For this script however, we are going to keep it simple. Say you want the most recent market price of Bitcoin.
+ Head over to <a href="https://blockchain.info/api/exchange_rates_api" title="blockchain's ticker">blockchain's ticker</a>, where you can convert the current price in BTC to ~20 different currencies. For this script, let's stick with USD.</p>
+        <p>The first thing we want to do is call the URL with python. Let's do that now:</p>
+            <pre>
+                <code class="language-python" data-lang="python">
+                    from urllib.request import urlopen
+                    link = "https://blockchain.info/ticker"
+                    raw_data = urlopen(link)
+                </code>
+            </pre>
+        <p>Awesome! But now we want to convert it to a JSON structure (<a href="https://en.wikipedia.org/wiki/JSON" title="JavaScript Object Notation">JavaScript Object Notation</a>) for easier handling. And while we are at it, let's filter the USD parameter.</p>
+            <pre>
+                <code class="language-python" data-lang="python">
+                    json_data = json.load(raw_data)
+                    price = json_data["USD"]["last"]
+                    print(f"${price}")
+                </code>
+            </pre>
+        <p>This last block of code will convert the data from <a href="https://blockchain.info/api/exchange_rates_api" title="blockchain's ticker">blockchain's ticker</a>, and convert the most recent price to USD.</p>
+        <p>And that's it! You've now taken your first step toward tracking bitcoin prices.</p>
+    </article>
 </html>
