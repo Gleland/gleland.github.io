@@ -1,6 +1,7 @@
 body{
     margin:1em auto;
     font:1.2em/1.62 sans-serif;
+    font-family: "Times", serif;
     background-color: #b7c8df;
 }
 
@@ -12,10 +13,15 @@ article{
     margin-left: auto;
     margin-right: auto;
     border: 3px solid black;
+    font-family: "Times", serif;
 }
+p{
+    font-family: "Times", serif;
 }
+
 h1,h2,h3 {
-    line-height:1.2;
+    line-height:1.0;
+    font-family: "Helvetica", serif;
 }
 @media print{
     body{
