@@ -42,3 +42,25 @@ img {
     height: auto;
     border-radius: 20px;
 }
+
+
+blockquote {
+    margin-left: -1.75rem;
+    margin-right: 1.75rem;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-left: 1.42188rem;
+    padding-right: 0;
+    padding-top: 0;
+    margin-bottom: 1.75rem;
+    font-size: 1rem;
+    line-height: 1.3rem;
+    color:
+    hsla(0,0%,0%,0.59);
+    font-style: italic;
+    border-left: 0.32813rem solid hsla(0,0%,0%,0.9);
+    border-left-color:
+    rgba(0, 0, 0, 0.9);
+    border-left-style: solid;
+    border-left-width: 0.2rem;
+}
